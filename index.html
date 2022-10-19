@@ -19,22 +19,56 @@
         <div class="sound-on"><i class="fas fa-volume-up"></i></div>
         <div class="sound-off hide"><i class="fas fa-volume-mute"></i></div>
            </div> 
+           <div class="menu">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+          </div>
+          <div class="cross hide"></div>
        </div>
-    <h1 class="heading">
-      Welcome  to A Million Dolar Quiz!
-    </h1>
-
-    <div class ="start-game">
-
+       <div class="menu hide">
+        <button aria-label="Home" class="home-icon hover">Home</button>
+        <button aria-label="Rules" class="rules-btn hover">Rules</button>
+        <button aria-label="High-score" class="high-score-btn hover">High score</button>
+        </div>
+      <div class="start-title-text">
+        <h1 class="heading">
+            Welcome  to A Million Dolar Quiz!
+        </h1>
+      </div>
+      <div class="start-title">
+        <p>Please enter your name and select the category to test your knowledge.</p>
+</div>
+    
+    <div class ="run-game">
 
     </div>
+
+    <div class="input-name">
+        <form action="javascript:void(0)" onsubmit="QuestionGameArea()">
+          <label for="player-name"></label>
+          <input type="text" id="player-name" placeholder="Name" maxlength="10" required />
+          <div class="run-game-area-btn">
+            <button aria-label="next-button" id="next-btn" class="hover">Start</button>
+          </div>
+        </form>
+        <div class="start-name-question">
+          <i class="fas fa-question-circle"></i>
+          <p>Your name can only include letters and spaces.</p>
+        </div>
+      </div>
+    
+
 
     <div class="quiz-categories">
-        <hi class="title-categories">Please choose your Category</hi>
-        <div class="Music"></div>
-        <div class="Movies"></div>
-        <div class="General-Knowlage"></div>
+        <hi class="title-categories">Select Category</hi>
+        <div class="Music">Music</div>
+        <div class="Movies">Movies</div>
+        <div class="General-Knowlage">General Knowlage</div>
     </div>
+
+
+
 </section>
 <script src="https://kit.fontawesome.com/fc632b9fc3.js" crossorigin="anonymous"></script>
 <script src="assets/js/script.js"></script>
