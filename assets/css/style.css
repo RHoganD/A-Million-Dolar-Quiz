@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/*Global style */
+
 :root {
     --clr-game-canvas: #031227;
     --clr-text: #faf9f6;
@@ -19,7 +23,30 @@
     background-size: cover;
   }
   
-  body {
+  /* body {
     background-color: #0d1117;
     color: var(--clr-text);
+  } */
+
+  /* Game Bar Area */
+
+.game-bar {
+    width: 1000px;
+    height: 70px;
+    background-color: #115560;
+    /* border-radius: 20px 20px 0px 0px; */
+    padding: 0px;
   }
+
+  .game-area {
+    background-color: #E6ECF0;
+    box-sizing: border-box;
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    
+}
