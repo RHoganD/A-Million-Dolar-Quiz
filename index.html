@@ -24,7 +24,7 @@
             <div class="menu-line"></div>
             <div class="menu-line"></div>
           </div>
-          <div class="cross hide"></div>
+          <!-- <div class="cross hide"></div> -->
        </div>
        <div class="menu hide">
         <button aria-label="Home" class="home-icon hover">Home</button>
@@ -38,7 +38,15 @@
       <div class="start-text">
         <p>Please enter your name and select the category to test your knowledge.</p>
      </div>
-    
+
+     <button class="categories" onclick="category()">Click Me!</button>
+    <div id="quiz-categories" class="hide">
+      <p>Select Category</p>
+        <div class="Music">Music</div>
+        <div class="Movies">Movies</div>
+        <div class="General-Knowlage">General Knowlage</div>
+    </div>
+
     <div class ="run-game">
 
     </div>
@@ -51,20 +59,11 @@
             <button aria-label="next-button" id="next-btn" class="hover">START</button>
           </div>
         </form>
-        <div class="start-name-question">
-          <i class="fas fa-question-circle"></i>
-          <p>Your name can only include letters and spaces.</p>
-        </div>
+        
       </div>
     
 
-
-    <div class="quiz-categories">
-        <hi class="title-categories">Select Category</hi>
-        <div class="Music">Music</div>
-        <div class="Movies">Movies</div>
-        <div class="General-Knowlage">General Knowlage</div>
-    </div>
+     
 
 
 
