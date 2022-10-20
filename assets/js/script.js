@@ -1,6 +1,27 @@
 
 
-    
+let Quizcategory = document.getElementById("quiz-categories");
+
+function runGame(event) {
+    let category = event.target.value;
+
+    if (category === "music") {
+        shuffledQuestions = musicQuestions.sort(() => Math.random() - 0.5);
+        currentQuestionSet = shuffledQuestions;
+        playerDifficulty = "music";
+        difficultyEasyBtn.innerText = "Loading...";
+      } else if (difficulty === "medium") {
+        shuffledQuestions = mediumQuestions.sort(() => Math.random() - 0.5);
+        currentQuestionSet = shuffledQuestions;
+        playerDifficulty = "medium";
+        difficultyMediumBtn.innerText = "Loading...";
+      } else if (difficulty === "hard") {
+        shuffledQuestions = hardQuestions.sort(() => Math.random() - 0.5);
+        currentQuestionSet = shuffledQuestions;
+        playerDifficulty = "hard";
+        difficultyHardBtn.innerText = "Loading...";
+      }
+
 
 
 function runGame(){

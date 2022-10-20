@@ -51,26 +51,47 @@
         </form>
         
       </div>
-<!--     
-      <button class= "btn categories" onclick="category()">Select Category</button>
-      <div id="quiz-categories" class="hide">
-        <div class="Music">Music</div>
-          <div class="Movies">Movies</div>
-          <div class="General-Knowlage">General Knowlage</div>
-      </div> -->
+    
      
-
-
       </div>
 </section>
 
+<!-- Category Selection Area -->
 
-<button class= "btn categories" onclick="category()">Select Category</button>
-<div id="quiz-categories">
-  <div class="Music">Music</div>
-    <div class="Movies">Movies</div>
-    <div class="General-Knowlage">General Knowlage</div>
+<section class="category-selectionArea hide" id="">
+
+  <div class="game-bar">
+    <div class="home-icon"><i class="fas fa-home"></i></div>
+    <div class="audio-icon">
+    <div class="sound-on"><i class="fas fa-volume-up"></i></div>
+    <div class="sound-off hide"><i class="fas fa-volume-mute"></i></div>
+       </div> 
+
+       <div class="menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+      </div>
+
+   <div class="menu hide">
+    <button aria-label="Home" class="home-icon hover">Home</button>
+    <button aria-label="Rules" class="rules-btn hover">Rules</button>
+    <button aria-label="High-score" class="high-score-btn hover">High score</button>
+    </div>
+
+
+
+<div class="category-selection" id="quiz-categories">
+ <button aria-label="Music" class="hover" value="music" id="music-questions">Music</button>
+  <button aria-label="Movie" class="hover" value="movie" id="movie-question">Movie</button>
+  <button aria-label="General-Knowlage" class="hover" value="general" id="general-questions">General Knowlage</button>
 </div>
+ 
+
+</section>
+
+
 
 <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
 <script src="assets/js/script.js"></script>
