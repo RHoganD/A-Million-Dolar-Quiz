@@ -11,9 +11,10 @@
 </head>
 <body>
     <section class="game-area">
+      <div class="game-runArea">
+
         <div class="game-bar">
         <div class="home-icon"><i class="fas fa-home"></i></div>
-
         <div class="audio-icon">
         <div class="sound-on"><i class="fas fa-volume-up"></i></div>
         <div class="sound-off hide"><i class="fas fa-volume-mute"></i></div>
@@ -24,29 +25,19 @@
             <div class="menu-line"></div>
             <div class="menu-line"></div>
           </div>
-          <!-- <div class="cross hide"></div> -->
-       </div>
+          </div>
+
        <div class="menu hide">
         <button aria-label="Home" class="home-icon hover">Home</button>
         <button aria-label="Rules" class="rules-btn hover">Rules</button>
         <button aria-label="High-score" class="high-score-btn hover">High score</button>
         </div>
       <div class="start-title">
-        <h1>Welcome  to A Million Dolar Quiz!</h1>
+        <h1>Welcome  to A Million Dollar Quiz!</h1>
+        <p>Please enter your name and select the category to test your knowledge.</p>
       </div>
         
-      <div class="start-text">
-        <p>Please enter your name and select the category to test your knowledge.</p>
-     </div>
-
-     <button class= "btn categories" onclick="category()"></button>
-    <div id="quiz-categories" class="hide">
-      <div class="Music">Music</div>
-        <div class="Movies">Movies</div>
-        <div class="General-Knowlage">General Knowlage</div>
-    </div>
-
-    <div class ="run-game">
+      <div class ="run-game">
 
     </div>
 
@@ -60,13 +51,27 @@
         </form>
         
       </div>
-    
-
+<!--     
+      <button class= "btn categories" onclick="category()">Select Category</button>
+      <div id="quiz-categories" class="hide">
+        <div class="Music">Music</div>
+          <div class="Movies">Movies</div>
+          <div class="General-Knowlage">General Knowlage</div>
+      </div> -->
      
 
 
-
+      </div>
 </section>
+
+
+<button class= "btn categories" onclick="category()">Select Category</button>
+<div id="quiz-categories">
+  <div class="Music">Music</div>
+    <div class="Movies">Movies</div>
+    <div class="General-Knowlage">General Knowlage</div>
+</div>
+
 <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
 <script src="assets/js/script.js"></script>
 </body>
