@@ -5,95 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    
-    <title>A Million Dolar Quiz</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> -->
+    <title>A Million Dollar Quiz</title>
 
 </head>
 <body>
-    <section class="game-area">
-      <div class="game-runArea">
-
-        <div class="game-bar">
-        <div class="home-icon"><i class="fas fa-home"></i></div>
-        <div class="audio-icon">
+<!-- Welcome Area -->
+  <div id="welcome_Area">
+    <div class="homebar">
+      <div class="home-icon-logo">
+        <i class="fas fa-home"></i>
+      </div>
+      <div class="audio-icon-logo">
         <div class="sound-on"><i class="fas fa-volume-up"></i></div>
         <div class="sound-off hide"><i class="fas fa-volume-mute"></i></div>
-           </div> 
-
-           <div class="menu">
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
-          </div>
-          </div>
-
-       <div class="menu hide">
-        <button aria-label="Home" class="home-icon hover">Home</button>
-        <button aria-label="Rules" class="rules-btn hover">Rules</button>
-        <button aria-label="High-score" class="high-score-btn hover">High score</button>
-        </div>
-      <div class="start-title">
-        <h1>Welcome  to A Million Dollar Quiz!</h1>
-        <p>Please enter your name and select the category to test your knowledge.</p>
       </div>
-        
-      <div class ="run-game">
-
-    </div>
+  </div>
+  <div class="title">
+        <h1>Welcome to A Million Dollar Quiz!</h1>
+        <h4>Please Enter your Name</h4>
+          </div>
+          
 
     <div class="input-name">
         <form action="javascript:void(0)" onsubmit="QuestionGameArea()">
           <label for="player-name"></label>
           <input type="text" id="player-name" placeholder="Name" maxlength="10" required /> 
-          <div class="run-game-area-btn">
-            <button aria-label="next-button" id="next-btn" class="hover">START</button>
-          </div>
-        </form>
+           </form>
         
       </div>
-    
-     
-      </div>
-</section>
-
-<!-- Category Selection Area -->
-
-<section class="category-selectionArea hide" id="">
-
-  <div class="game-bar">
-    <div class="home-icon"><i class="fas fa-home"></i></div>
-    <div class="audio-icon">
-    <div class="sound-on"><i class="fas fa-volume-up"></i></div>
-    <div class="sound-off hide"><i class="fas fa-volume-mute"></i></div>
-       </div> 
-
-       <div class="menu">
-        <div class="menu-line"></div>
-        <div class="menu-line"></div>
-        <div class="menu-line"></div>
-      </div>
       </div>
 
-   <div class="menu hide">
-    <button aria-label="Home" class="home-icon hover">Home</button>
-    <button aria-label="Rules" class="rules-btn hover">Rules</button>
-    <button aria-label="High-score" class="high-score-btn hover">High score</button>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
     </div>
-
-
-
-<div class="category-selection" id="quiz-categories">
- <button aria-label="Music" class="hover" value="music" id="music-questions">Music</button>
-  <button aria-label="Movie" class="hover" value="movie" id="movie-question">Movie</button>
-  <button aria-label="General-Knowlage" class="hover" value="general" id="general-questions">General Knowlage</button>
-</div>
- 
-
-</section>
-
-
-
-<script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    
+<script src="assets/js/questions.js"></script>   
 <script src="assets/js/script.js"></script>
+<script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
 </body>
 </html>
